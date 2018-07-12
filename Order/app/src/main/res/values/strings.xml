@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">在线下单</string>
+
+
+    <string name="hint_login_username">请输入手机号码</string>
+    <string name="hint_login_password">输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="please_input_limit_pwd">请输入数字或字母</string>
+
+    <string name="order_center">订单中心</string>
+    <string name="scan">扫描</string>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+
+    <string name="tips_titles">温馨提示</string>
+    <string name="cancels">取消</string>
+    <string name="main_sures">确认修改</string>
+
+    <string name="login_account_not_null">手机号不能为空</string>
+    <string name="login_tel_sucs">手机格式不正确</string>
+    <string name="login_pwd_not_null">密码不能为空</string>
+    <string name="login_pwd_sucs">密码长度应为4&#8211;12位</string>
+
+
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/root"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:clipToPadding="true"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+    <include layout="@layout/base_title"
+        android:id="@+id/title"/>
+
+        <LinearLayout
+            android:layout_below="@id/title"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size_10">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="店铺名称"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="店铺EnCode："/>
+                <EditText
+                    android:id="@+id/et_shop_encode"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40"
+                    android:background="@null"
+                    android:hint="请输店铺EnCode"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_select_shop"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="21dp"
+                android:background="@drawable/bg_btn_login_selected"
+                android:text="选择店铺EnCode"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_order_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输入订单号"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_payment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输支付金额"
+                android:inputType="number|text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_pay_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输支付类型"
+                android:inputType="number|text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_pay_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输支付流水号"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_trace_audit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输支付参考号"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_bank_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输银行卡号"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_bank_type"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输银行卡类型:1,借记卡，2信用卡，3贷记卡"
+                android:inputType="number|text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+
+            <EditText
+                android:id="@+id/et_voucher_record"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输凭证记录"
+                android:inputType="text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <EditText
+                android:id="@+id/et_sheet_category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40"
+                android:background="@null"
+                android:hint="请输SheetCategory:0, 零售单 1, 储值 2,独立收银"
+                android:inputType="number|text"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/color_999999"
+                android:textColorHint="@color/color_999999"
+                android:textSize="14dp" />
+            <View style="@style/common_divider_line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/et_create_time"
+                    android:layout_width="@dimen/size_200"
+                    android:layout_height="@dimen/size_40"
+                    android:background="@null"
+                    android:hint="请输时间日期"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color_999999"
+                    android:textColorHint="@color/color_999999"
+                    android:textSize="14dp" />
+                <Button
+                    android:id="@+id/btn_select_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_btn_login_selected"
+                    android:text="选择时间"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+            </LinearLayout>
+            <View style="@style/common_divider_line"/>
+        </LinearLayout>
+
+</RelativeLayout>

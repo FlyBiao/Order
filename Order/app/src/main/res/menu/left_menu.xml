@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_app_message"
+        android:title="订单中心"
+        android:icon="@mipmap/order_certen"/>
+
+    <item
+        android:id="@+id/menu_app_order_settle"
+        android:title="对账单"
+        android:icon="@mipmap/settle"/>
+
+    <item
+        android:id="@+id/menu_app_scan_order"
+        android:title="扫描下单"
+        android:icon="@mipmap/scan_order"/>
+
+    <item
+        android:id="@+id/menu_app_update"
+        android:title="应用更新"
+        android:icon="@mipmap/app_update"/>
+
+    <item
+        android:id="@+id/menu_app_setting"
+        android:title="支付处理"
+        android:icon="@mipmap/setting"/>
+
+    <item
+        android:id="@+id/menu_app_pay"
+        android:title="支付流水"
+        android:icon="@mipmap/setting"/>
+
+    <item
+        android:id="@+id/menu_app_exit"
+        android:title="退出应用"
+        android:icon="@mipmap/exit"/>
+
+</menu>
